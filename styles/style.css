@@ -115,14 +115,29 @@ align-items: center;}
 .header-contact-link:focus {
   color: #2196f3;
 }
+.mail::before {content: '';}
+.phone::before {content: '';}
+
 
 /* Section hero */
 
 .hero {
-  background-color: #2f303a;
+  max-width: 1600px;
+  display: block;
+  background-color: rgba(47, 48, 58, 0.4);
+  background-image: url(../image/background/bg_hero.jpg), 
+  linear-gradient(to right, rgba(47, 48, 58, 0.4),
+  rgba(47, 48, 58, 0.4));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 200px;
+  padding-right: 0;
   padding-bottom: 200px;
+  padding-left: 0;
 }
 
 .hero-title {
