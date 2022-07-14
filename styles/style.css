@@ -34,8 +34,10 @@ img {
 .header {
   border-bottom: 1px solid #eeeeee;
 }
-.header-container{display: flex;
-align-items: center;}
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
 .header-div {
   display: flex;
@@ -49,8 +51,10 @@ align-items: center;}
   padding-left: 0;
 }
 
-.secondsry-nav-div{display: flex;
-  margin-left: auto;}
+.secondsry-nav-div {
+  display: flex;
+  margin-left: auto;
+}
 
 .secondsry-nav {
   display: flex;
@@ -59,7 +63,6 @@ align-items: center;}
   margin-top: 0;
   margin-bottom: 0;
 }
-
 
 .logo {
   font-family: "Raleway";
@@ -78,8 +81,12 @@ align-items: center;}
   color: #000000;
 }
 
-.header-list-item{margin-left: 50px;}
-.header-list-item:first-child{margin-left: 93px;}
+.header-list-item {
+  margin-left: 50px;
+}
+.header-list-item:first-child {
+  margin-left: 93px;
+}
 
 .header-link {
   display: block;
@@ -115,9 +122,17 @@ align-items: center;}
 .header-contact-link:focus {
   color: #2196f3;
 }
-.mail::before {content: '';}
-.phone::before {content: '';}
 
+.contact-svg {
+  width: 16px;
+  height: 12px;
+  fill: var(--secondary-text-color);
+  margin-right: 10px;
+}
+
+.contact-svg:hover {
+  fill: #2196f3;
+}
 
 /* Section hero */
 
@@ -125,11 +140,13 @@ align-items: center;}
   max-width: 1600px;
   display: block;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: url(../image/background/bg_hero.jpg), 
-  linear-gradient(to right, rgba(47, 48, 58, 0.4),
-  rgba(47, 48, 58, 0.4));
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/background/bg_hero.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   text-align: center;
   margin-right: auto;
@@ -198,7 +215,17 @@ align-items: center;}
   margin-top: 0;
   margin-bottom: 0;
 }
-.benefits-list-item{flex-basis: 270px;}
+.benefits-list-item {
+  flex-basis: 270px;
+}
+
+.benefits-svg-div {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
 
 .benefits-title {
   color: var(--main-text-color);
@@ -310,7 +337,43 @@ align-items: center;}
   line-height: 1.18;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
+}
+
+.team-svg-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.team-svg-card {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+  outline: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-svg-card:hover {
+  background-color: #2196f3;
+  fill: white;
+}
+
+.team-svg {
+  fill: #afb1b8;
+}
+.team-svg:hover {
+  fill: #ffffff;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* footer */
@@ -360,7 +423,10 @@ align-items: center;}
   text-decoration: none;
   margin-bottom: 9px;
 }
-.footer-contact-link:hover, .footer-contact-link:focus{color: #2196f3;}
+.footer-contact-link:hover,
+.footer-contact-link:focus {
+  color: #2196f3;
+}
 .footer-contact-link:last-child {
   margin-bottom: 0;
 }
@@ -394,11 +460,12 @@ align-items: center;}
   cursor: pointer;
 }
 
-.btn-list-item{margin-left: 8px;}
+.btn-list-item {
+  margin-left: 8px;
+}
 .btn-list-item:first-child {
   margin-left: 0;
 }
-
 
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -409,7 +476,6 @@ align-items: center;}
   display: flex;
   margin-bottom: 50px;
 }
-
 
 .portfolio-card-list {
   display: flex;
@@ -452,4 +518,3 @@ align-items: center;}
   margin-top: 0;
   margin-bottom: 0;
 }
-
