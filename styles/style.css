@@ -29,11 +29,19 @@ img {
   margin-left: auto;
 }
 
+.footer-block{display: flex;
+align-items: baseline;
+gap: 70px;}
+
 /* header */
 
 .header {
   border-bottom: 1px solid #eeeeee;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 .header-container {
   display: flex;
   align-items: center;
@@ -123,11 +131,15 @@ img {
   color: #2196f3;
 }
 
+.contact-list {display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .contact-svg {
-  width: 16px;
-  height: 12px;
   fill: var(--secondary-text-color);
   margin-right: 10px;
+  display: inline-block;
 }
 
 .contact-svg:hover {
@@ -225,6 +237,9 @@ img {
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .benefits-title {
@@ -345,6 +360,8 @@ img {
   gap: 10px;
   justify-content: center;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .team-svg-card {
@@ -352,7 +369,6 @@ img {
   height: 44px;
   fill: #afb1b8;
   border-radius: 50%;
-  outline: 1px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -360,20 +376,69 @@ img {
 
 .team-svg-card:hover {
   background-color: #2196f3;
-  fill: white;
 }
 
 .team-svg {
   fill: #afb1b8;
 }
-.team-svg:hover {
+.team-svg-card:hover .team-svg:hover {
   fill: #ffffff;
 }
+
+/* клиенты */
+
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.clients-list-item:hover {
+  border: 1px solid #2196f3;
+}
+
+.clients-link{display: flex;
+justify-content: center;
+align-items: center;}
+
+.clients-logo {fill: #AFB1B8;}
+.clients-logo:hover{fill: #2196f3;}
+
 
 
 /* footer */
 
 .footer {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -425,6 +490,15 @@ img {
 .footer-contact-link:last-child {
   margin-bottom: 0;
 }
+
+.footer-title {font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+margin-bottom: 20px;}
 
 /* Портфолио */
 
