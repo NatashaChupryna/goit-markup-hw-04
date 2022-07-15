@@ -427,17 +427,20 @@ img {
 }
 
 .clients-link {
+  width: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.clients-link:hover .clients-logo {
+  fill: #2196f3;
+}
+
 .clients-logo {
   fill: #afb1b8;
 }
-.clients-logo:hover {
-  fill: #2196f3;
-}
+
 
 /* footer */
 
@@ -448,6 +451,7 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 215px;
 }
 
 .footer-container {
@@ -456,9 +460,6 @@ img {
   margin-left: ;
 }
 
-.footer > a + a + a {
-  margin-bottom: 10px;
-}
 
 .logo-white-word {
   color: #ffffff;
@@ -508,6 +509,26 @@ img {
   margin-top: 0;
   margin-bottom: 20px;
 }
+.social-link {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link:hover {
+  background-color: #2196f3;
+}
+
+.social-link-svg {
+  fill: #ffffff;
+}
+.social-link:hover .team-svg {
+  fill: #ffffff;
 
 /* Портфолио */
 
@@ -565,7 +586,6 @@ img {
 }
 
 .portfolio-card:hover {
-  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
