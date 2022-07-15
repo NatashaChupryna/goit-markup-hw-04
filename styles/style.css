@@ -136,7 +136,7 @@ img {
   justify-content: center;
   align-items: center;
 }
-.contact-list-item:hover .contact-svg {
+.contact-list-item:hover .contact-list-item:focus.contact-svg {
   fill: #2196f3;
 }
 
@@ -374,14 +374,16 @@ img {
   align-items: center;
 }
 
-.team-svg-card:hover {
+.team-svg-card:hover,
+.team-svg-card:focus {
   background-color: #2196f3;
 }
 
 .team-svg {
   fill: #afb1b8;
 }
-.team-svg-card:hover .team-svg {
+.team-svg-card:hover,
+.team-svg-card:focus .team-svg {
   fill: #ffffff;
 }
 
@@ -427,11 +429,15 @@ img {
   border: 1px solid #afb1b8;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid #2196f3;
 }
 
 .clients-link:hover .clients-logo {
+  fill: #2196f3;
+}
+.clients-link:focus .clients-logo {
   fill: #2196f3;
 }
 
@@ -515,14 +521,16 @@ img {
   align-items: center;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   background-color: #2196f3;
 }
 
 .social-link-svg {
   fill: #ffffff;
 }
-.social-link:hover .team-svg {
+.social-link:hover,
+.social-link:focus .team-svg {
   fill: #ffffff;
 }
 
